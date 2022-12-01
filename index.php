@@ -6,11 +6,8 @@ if (isset($_GET['action']) && $_GET['action']=='deco'){
     $_SESSION['messages']['info'][]='A bientôt, merci de votre visite &#128522';
     header('location:./');
     exit();
-
+/////////////////////////////
 }
-
-
-
 
 $requete=executeRequete("SELECT * FROM produit");
 $produits=$requete->fetchAll(PDO::FETCH_ASSOC);
@@ -20,7 +17,7 @@ $produits=$requete->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
-
+gsrgrgr
 <div class="row justify-content-evenly">
 
 <?php foreach ($produits as $produit):  ?>
